@@ -34,20 +34,20 @@ function Index() {
         </button>
       </div>
 
-      <div className='flex flex-col items-center my-auto ml-20'>
-        <h1 className="text-xl font-bold underline text-white">
+      <div className='flex flex-col items-center my-auto'>
+        {/* <h1 className="text-xl font-bold underline text-white">
           {message}
-        </h1>
+        </h1> */}
 
-        <div className="grid gap-x-8 gap-y-4 grid-cols-3">
-          <div>
-
+        <div className="grid gap-x-8 gap-y-8 grid-cols-3 w-full mr-[20%]">
+          <div className="container bg-slate-50 h-[300px] w-[250px] rounded-lg">
+              <img className="overflow-hidden object-cover"src='https://i.scdn.co/image/ab67616d0000b2739abdf14e6058bd3903686148' alt="style" />
           </div>
-          <div>02</div>
-          <div>03</div>
-          <div>04</div>
-          <div>05</div>
-          <div>06</div>
+          <div className="container bg-slate-50 h-[300px] w-[250px] rounded-lg"></div>
+          <div className="container bg-slate-50 h-[300px] w-[250px] rounded-lg"></div>
+          <div className="container bg-slate-50 h-[300px] w-[250px] rounded-lg"></div>
+          <div className="container bg-slate-50 h-[300px] w-[250px] rounded-lg"></div>
+          <div className="container bg-slate-50 h-[300px] w-[250px] rounded-lg"></div>
         </div>
 
       </div>
