@@ -29,7 +29,7 @@ function Index() {
           />
         </div>
 
-        <button type="button" className="w-[350px] py-2.5 px-20 me-2 mb-2 text-xl font-medium text-gray-900 focus:outline-none bg-white rounded-lg hover:bg-violet-700 hover:text-white focus:z-10 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
+        <button type="button" className="w-[350px] py-2.5 px-20 me-2 mb-2 text-xl font-medium text-gray-900 focus:outline-none bg-white rounded-lg hover:bg-violet-700 hover:text-white focus:z-10 focus:ring-gray-100 hover:-translate-y-1 hover:scale-100">
           Recommend
         </button>
       </div>
@@ -40,42 +40,41 @@ function Index() {
         </h1> */}
 
         <div className="grid gap-x-8 gap-y-8 grid-cols-3 w-full mr-[20%]">
-          <div className="container bg-slate-50 h-[350px] w-[250px] rounded-lg overflow-hidden hover:bg-neutral-100">
+          <div className="container bg-slate-50 h-[350px] w-[250px] rounded-lg overflow-hidden hover:bg-neutral-100 hover:ring-4 ring-violet-700">
               <img className="object-cover"src='https://i.scdn.co/image/ab67616d0000b2739abdf14e6058bd3903686148' alt="style" />
               <h1 className="text-2xl text-center font-bold mt-5">{message}</h1>
               <h3 className="text-xl text-center">{message}</h3>
           </div>
 
-          <div className="container bg-slate-50 h-[350px] w-[250px] rounded-lg overflow-hidden">
+          <div className="container bg-slate-50 h-[350px] w-[250px] rounded-lg overflow-hidden hover:bg-neutral-100 hover:ring-4 ring-violet-700">
               <img className="object-cover"src='https://i.scdn.co/image/ab67616d0000b2739abdf14e6058bd3903686148' alt="style" />
               <h1 className="text-2xl text-center font-bold mt-5">{message}</h1>
               <h3 className="text-xl text-center">{message}</h3>
           </div>
 
-          <div className="container bg-slate-50 h-[350px] w-[250px] rounded-lg overflow-hidden">
+          <div className="container bg-slate-50 h-[350px] w-[250px] rounded-lg overflow-hidden hover:bg-neutral-100 hover:ring-4 ring-violet-700">
               <img className="object-cover"src='https://i.scdn.co/image/ab67616d0000b2739abdf14e6058bd3903686148' alt="style" />
               <h1 className="text-2xl text-center font-bold mt-5">{message}</h1>
               <h3 className="text-xl text-center">{message}</h3>
           </div>
 
-          <div className="container bg-slate-50 h-[350px] w-[250px] rounded-lg overflow-hidden">
+          <div className="container bg-slate-50 h-[350px] w-[250px] rounded-lg overflow-hidden hover:bg-neutral-100 hover:ring-4 ring-violet-700">
               <img className="object-cover"src='https://i.scdn.co/image/ab67616d0000b2739abdf14e6058bd3903686148' alt="style" />
               <h1 className="text-2xl text-center font-bold mt-5">{message}</h1>
               <h3 className="text-xl text-center">{message}</h3>
           </div>
 
-          <div className="container bg-slate-50 h-[350px] w-[250px] rounded-lg overflow-hidden">
+          <div className="container bg-slate-50 h-[350px] w-[250px] rounded-lg overflow-hidden hover:bg-neutral-100 hover:ring-4 ring-violet-700">
               <img className="object-cover"src='https://i.scdn.co/image/ab67616d0000b2739abdf14e6058bd3903686148' alt="style" />
               <h1 className="text-2xl text-center font-bold mt-5">{message}</h1>
               <h3 className="text-xl text-center">{message}</h3>
           </div>
 
-          <div className="container bg-slate-50 h-[350px] w-[250px] rounded-lg overflow-hidden">
+          <div className="container bg-slate-50 h-[350px] w-[250px] rounded-lg overflow-hidden hover:bg-neutral-100 hover:ring-4 ring-violet-700">
               <img className="object-cover"src='https://i.scdn.co/image/ab67616d0000b2739abdf14e6058bd3903686148' alt="style" />
               <h1 className="text-2xl text-center font-bold mt-5">{message}</h1>
               <h3 className="text-xl text-center">{message}</h3>
           </div>
-      
         </div>
 
       </div>
