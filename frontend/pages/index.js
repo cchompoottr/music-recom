@@ -40,14 +40,42 @@ function Index() {
         </h1> */}
 
         <div className="grid gap-x-8 gap-y-8 grid-cols-3 w-full mr-[20%]">
-          <div className="container bg-slate-50 h-[300px] w-[250px] rounded-lg">
-              <img className="overflow-hidden object-cover"src='https://i.scdn.co/image/ab67616d0000b2739abdf14e6058bd3903686148' alt="style" />
+          <div className="container bg-slate-50 h-[350px] w-[250px] rounded-lg overflow-hidden hover:bg-neutral-100">
+              <img className="object-cover"src='https://i.scdn.co/image/ab67616d0000b2739abdf14e6058bd3903686148' alt="style" />
+              <h1 className="text-2xl text-center font-bold mt-5">{message}</h1>
+              <h3 className="text-xl text-center">{message}</h3>
           </div>
-          <div className="container bg-slate-50 h-[300px] w-[250px] rounded-lg"></div>
-          <div className="container bg-slate-50 h-[300px] w-[250px] rounded-lg"></div>
-          <div className="container bg-slate-50 h-[300px] w-[250px] rounded-lg"></div>
-          <div className="container bg-slate-50 h-[300px] w-[250px] rounded-lg"></div>
-          <div className="container bg-slate-50 h-[300px] w-[250px] rounded-lg"></div>
+
+          <div className="container bg-slate-50 h-[350px] w-[250px] rounded-lg overflow-hidden">
+              <img className="object-cover"src='https://i.scdn.co/image/ab67616d0000b2739abdf14e6058bd3903686148' alt="style" />
+              <h1 className="text-2xl text-center font-bold mt-5">{message}</h1>
+              <h3 className="text-xl text-center">{message}</h3>
+          </div>
+
+          <div className="container bg-slate-50 h-[350px] w-[250px] rounded-lg overflow-hidden">
+              <img className="object-cover"src='https://i.scdn.co/image/ab67616d0000b2739abdf14e6058bd3903686148' alt="style" />
+              <h1 className="text-2xl text-center font-bold mt-5">{message}</h1>
+              <h3 className="text-xl text-center">{message}</h3>
+          </div>
+
+          <div className="container bg-slate-50 h-[350px] w-[250px] rounded-lg overflow-hidden">
+              <img className="object-cover"src='https://i.scdn.co/image/ab67616d0000b2739abdf14e6058bd3903686148' alt="style" />
+              <h1 className="text-2xl text-center font-bold mt-5">{message}</h1>
+              <h3 className="text-xl text-center">{message}</h3>
+          </div>
+
+          <div className="container bg-slate-50 h-[350px] w-[250px] rounded-lg overflow-hidden">
+              <img className="object-cover"src='https://i.scdn.co/image/ab67616d0000b2739abdf14e6058bd3903686148' alt="style" />
+              <h1 className="text-2xl text-center font-bold mt-5">{message}</h1>
+              <h3 className="text-xl text-center">{message}</h3>
+          </div>
+
+          <div className="container bg-slate-50 h-[350px] w-[250px] rounded-lg overflow-hidden">
+              <img className="object-cover"src='https://i.scdn.co/image/ab67616d0000b2739abdf14e6058bd3903686148' alt="style" />
+              <h1 className="text-2xl text-center font-bold mt-5">{message}</h1>
+              <h3 className="text-xl text-center">{message}</h3>
+          </div>
+      
         </div>
 
       </div>
