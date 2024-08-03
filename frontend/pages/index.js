@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 
 function Index() {
@@ -7,7 +7,19 @@ function Index() {
   const [imageUrls, setImageUrls] = useState([]);
   const [inputValue, setInputValue] = useState("");
   const [artistName, setArtistName] = useState([]);
+  const [allTracks, setAllTracks] = useState([]);
 
+  useEffect(() => {
+    fetch('http://localhost:2000/all-tracks')
+      .then(response => response.json())
+      .then(data => {
+        setAllTracks(data.tracks || []);
+      })
+      .catch(error => {
+        console.error('Error:', error);
+      });
+  }, []);
+  
   const handleInput = (e) => {
     setInputValue(e.target.value);
   };
@@ -19,8 +31,7 @@ function Index() {
         setTrackName(data.recommendations || []);
         setImageUrls(data.image_urls || []);
         setArtistName(data.artist || []);
-      })
-    
+        })
   };
 
 
@@ -38,9 +49,15 @@ function Index() {
             id="input-label"
             value={inputValue}
             onChange={handleInput}
+            list="tracks"
             aria-label="Track Name"
-            className="w-[350px] py-2.5 px-3 block text-white border-solid border-4 border-neutral-500 rounded-lg text-lg mb-5 focus:border-violet-700  disabled:pointer-events-none bg-neutral-950 sm:-translate-x-6 sm:py-1 sm:w-[290px] sm:text-lg md:text-lg md:py-2 md:w-[290px] md:-translate-x-6"
+            className="w-[350px] py-2.5 px-3 block text-white border-solid border-4 border-neutral-500 rounded-lg text-lg mb-5 focus:border-violet-700 disabled:pointer-events-none bg-neutral-950 sm:-translate-x-6 sm:py-1 sm:w-[290px] sm:text-lg md:text-lg md:py-2 md:w-[290px] md:-translate-x-6"
           />
+          <datalist id="tracks">
+            {allTracks.map((track, index) => (
+              <option key={index} value={track} />
+            ))}
+          </datalist>
         </div>
 
         <button 

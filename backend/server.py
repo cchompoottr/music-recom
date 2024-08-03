@@ -1,26 +1,35 @@
 from flask import Flask, jsonify, request
 from flask_cors import CORS
 from sklearn.metrics.pairwise import cosine_similarity
+
 import pandas as pd
 import numpy as np
 
 
-df = pd.read_csv('/Users/chompoo/Downloads/final__df.csv')
+
+df = pd.read_csv('/Applications/MAMP/htdocs/music-recom/frontend/public/final__df.csv')
 image_urls = df['Album Image URL'].tolist()
 artist = df['Artist Name(s)'].tolist()
+total_song = df['Track Name'].tolist()
 
 def create_vectors(df):
     return np.random.rand(len(df), 10)  
 
 vectors = create_vectors(df)
 
+
 app = Flask(__name__)
 CORS(app)
+
+@app.route("/all-tracks", methods=['GET'])
+def all_tracks():
+    tracks = df['Track Name'].tolist()
+    return jsonify({'tracks': tracks})
 
 
 @app.route("/recommend", methods=['GET'])
 def recommend():
-    song = request.args.get('song')  # รับชื่อเพลงจาก query parameter
+    song = request.args.get('song')  
     if song is None:
         return jsonify({'error': 'No song provided'}), 400
 
